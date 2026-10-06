@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fleet Tracker JMR</string>
+    <string name="hint_truck_id">ID del camión</string>
+    <string name="hint_driver">Nombre del chofer</string>
+    <string name="start_tracking">Iniciar rastreo</string>
+    <string name="stop_tracking">Detener rastreo</string>
+    <string name="tracking_active">Rastreando: %1$s (visible en el panel)</string>
+    <string name="tracking_stopped">Rastreo detenido.</string>
+    <string name="permission_needed">Se necesita permiso de ubicación para rastrear.</string>
+    <string name="channel_name">Rastreo GPS</string>
+    <string name="notification_title">Fleet Tracker JMR activo</string>
+    <string name="notification_text">Compartiendo ubicación del %1$s</string>
+</resources>

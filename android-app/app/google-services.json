@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "986802947512",
+    "project_id": "fleet-tracker-jmr-a82c1",
+    "storage_bucket": "fleet-tracker-jmr-a82c1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986802947512:android:8411e48adef6618c8cfb4d",
+        "android_client_info": {
+          "package_name": "com.jmrmartinez.fleettracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeD3RfH2SgJcR0khCwz6hWgJRPRI5_VeY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
