@@ -31,7 +31,8 @@ class TrackingService : Service() {
 
     private lateinit var fusedClient: FusedLocationProviderClient
     private lateinit var locationCallback: LocationCallback
-    private val database = FirebaseDatabase.getInstance().reference
+    private val database =
+        FirebaseDatabase.getInstance("https://fleet-tracker-jmr-a82c1-default-rtdb.firebaseio.com").reference
     private var truckId: String = "truck-01"
     private var driver: String = "Chofer"
 
