@@ -42,22 +42,10 @@ const db = firebase.database();
 
 const map = L.map('map').setView([32.7767, -96.7970], 10); // Dallas, TX
 
-// Capa principal (CartoDB, muy confiable) con respaldo a OpenStreetMap
-const carto = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-  attribution: '© OpenStreetMap © CARTO', maxZoom: 20, subdomains: 'abcd'
-});
-const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+// Mapa base: OpenStreetMap
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap', maxZoom: 19
-});
-let tileErrors = 0;
-carto.on('tileerror', () => {
-  tileErrors++;
-  if (tileErrors === 6) { // si Carto falla, cambia a OSM
-    map.removeLayer(carto);
-    osm.addTo(map);
-  }
-});
-carto.addTo(map);
+}).addTo(map);
 
 const markers = {};
 let centered = false;
